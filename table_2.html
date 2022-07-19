@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        table, th, td{
+            border:1px solid #ccc ;
+            border-collapse:collapse;
+        }
+        th{
+            padding:15px;
+            color:blue;
+        }
+        td{
+            color:red;
+        }
+        tr > td:nth-child(odd){
+            width:120px;
+        }
+        tr > td:nth-child(even){
+            width:300px;
+        }        
+    </style>
+</head>
+<body>
+    </table>
+    <table>
+        <tr>
+            <th>이름</th>
+            <td>홍길동</td>
+            <th>연락처</th>
+            <td>041-670-0613</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3">대전광역시 동구 우암로 253</td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3">내가 그의 이름을 불러주기 전에는...</td>
+        </tr>
+    </table>
+</body>
+</html>
